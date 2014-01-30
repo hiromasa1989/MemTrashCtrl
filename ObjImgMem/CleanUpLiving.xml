@@ -1,0 +1,487 @@
+<?xml version="1.0" encoding="utf-8"?>
+<world name="myworld1">
+  <gravity x="0.0" y="-980.7" z="0.0"/>
+
+<!-- robot -->
+  <instanciate class="WheelRobot-nii-v1.xml" type="Robot">
+    <set-attr-value name="name" value="robot_000"/>
+    <set-attr-value name="language" value="c++"/>
+    <set-attr-value name="implementation"
+                    value="./CleanUpRobot.so"/>
+    <set-attr-value name="dynamics" value="false"/>
+    <set-attr-value name="x" value="432.699"/>
+    <set-attr-value name="y" value="30.0"/>
+    <set-attr-value name="z" value="0.0"/>
+    <set-attr-value name="collision" value="true"/>
+    <camera id="1"  
+            link="HEAD_LINK"  
+            direction="0 -0.8 1"
+            position="0.0 0.0 5.0"/>  
+  </instanciate>
+
+<!-- objects -->
+  <!-- -->
+  <instanciate class="sePetbottle_2l_full_c01.xml">
+    <set-attr-value name="name" value="petbottle_1"/>
+    <set-attr-value name="dynamics" value="false"/>
+    <set-attr-value name="x" value="432.699"/>
+    <set-attr-value name="y" value="69.25"/>
+    <set-attr-value name="z" value="48.328"/>
+    <set-attr-value name="collision" value="true"/>
+  </instanciate> <!--
+  <instanciate class="sePetbottle_2l_full_c02.xml">
+    <set-attr-value name="name" value="petbottle_2"/>
+    <set-attr-value name="dynamics" value="false"/>
+    <set-attr-value name="x" value="432.699"/>
+    <set-attr-value name="y" value="69.25"/>
+    <set-attr-value name="z" value="48.328"/>
+    <set-attr-value name="collision" value="true"/>
+  </instanciate>
+  <instanciate class="sePetbottle_500ml_full_c01.xml">
+    <set-attr-value name="name" value="petbottle_3"/>
+    <set-attr-value name="dynamics" value="false"/>
+    <set-attr-value name="x" value="432.699"/>
+    <set-attr-value name="y" value="63.75"/>
+    <set-attr-value name="z" value="48.328"/>
+    <set-attr-value name="collision" value="true"/>
+  </instanciate>
+  <instanciate class="sePetbottle_500ml_full_c02.xml">
+    <set-attr-value name="name" value="petbottle_4"/>
+    <set-attr-value name="dynamics" value="false"/>
+    <set-attr-value name="x" value="432.699"/>
+    <set-attr-value name="y" value="63.75"/>
+    <set-attr-value name="z" value="48.328"/>
+    <set-attr-value name="collision" value="true"/>
+  </instanciate>
+  <instanciate class="seCannedjuice_350ml_c01.xml">
+    <set-attr-value name="name" value="can_1"/>
+    <set-attr-value name="dynamics" value="false"/>
+    <set-attr-value name="x" value="432.699"/>
+    <set-attr-value name="y" value="58.85"/>
+    <set-attr-value name="z" value="48.328"/>
+    <set-attr-value name="collision" value="true"/>
+  </instanciate> 
+  <instanciate class="seCannedjuice_350ml_c02.xml">  
+    <set-attr-value name="name" value="can_2"/>  
+    <set-attr-value name="dynamics" value="false"/>
+    <set-attr-value name="x" value="432.699"/>  
+    <set-attr-value name="y" value="58.85"/>  
+    <set-attr-value name="z" value="48.328"/>
+    <set-attr-value name="qw" value="0.0"/>
+    <set-attr-value name="qy" value="-1.0"/>
+    <set-attr-value name="collision" value="true"/>
+  </instanciate>
+  <instanciate class="seMugcup_c01.xml">
+    <set-attr-value name="name" value="mugcup_1"/>
+    <set-attr-value name="dynamics" value="false"/>
+    <set-attr-value name="x" value="432.699"/>
+    <set-attr-value name="y" value="56.6"/>
+    <set-attr-value name="z" value="48.328"/>
+    <set-attr-value name="qw" value="0.707"/>
+    <set-attr-value name="qy" value="0.707"/>
+    <set-attr-value name="collision" value="true"/>
+  </instanciate>  
+  <instanciate class="seMugcup_c02.xml">
+    <set-attr-value name="name" value="mugcup_2"/>
+    <set-attr-value name="dynamics" value="false"/>
+    <set-attr-value name="x" value="432.699"/>
+    <set-attr-value name="y" value="56.6"/>
+    <set-attr-value name="z" value="48.328"/>
+    <set-attr-value name="qw" value="0.707"/>
+    <set-attr-value name="qy" value="0.707"/>
+    <set-attr-value name="collision" value="true"/>
+  </instanciate>
+  <instanciate class="seBook_A.xml">
+    <set-attr-value name="name" value="book_1"/>
+    <set-attr-value name="dynamics" value="false"/>
+    <set-attr-value name="x" value="432.699"/>
+    <set-attr-value name="y" value="52.9"/>
+    <set-attr-value name="z" value="46.328"/>
+    <set-attr-value name="qw" value="0.0"/>
+    <set-attr-value name="qy" value="-1.0"/>
+    <set-attr-value name="collision" value="true"/>
+  </instanciate>
+  <instanciate class="seBook_B.xml">
+    <set-attr-value name="name" value="book_2"/>
+    <set-attr-value name="dynamics" value="false"/>
+    <set-attr-value name="x" value="432.699"/>
+    <set-attr-value name="y" value="52.9"/>
+    <set-attr-value name="z" value="46.328"/>
+    <set-attr-value name="qw" value="0.0"/>
+    <set-attr-value name="qy" value="-1.0"/>
+    <set-attr-value name="collision" value="true"/>
+  </instanciate> 
+  -->
+
+<!-- house -->
+  <instanciate class="A1_room.xml">
+    <set-attr-value name="name" value="Room1"/>
+    <set-attr-value name="dynamics" value="false"/>
+    <set-attr-value name="x" value="-2.764866"/>
+    <set-attr-value name="y" value="210.5"/>
+    <set-attr-value name="z" value="-18.438609"/>
+  </instanciate>
+ <instanciate class="roof.xml">
+   <set-attr-value name="name" value="roof"/>
+   <set-attr-value name="x" value="-35.0"/>
+   <set-attr-value name="y" value="282.0"/>
+   <set-attr-value name="z" value="15.0"/>
+   <set-attr-value name="dynamics" value="false"/>
+   <set-attr-value name="collision" value="false"/>
+ </instanciate>
+  <instanciate class="roof.xml">
+    <set-attr-value name="name" value="wall1"/>
+    <set-attr-value name="x" value="-45.0"/>
+    <set-attr-value name="y" value="141.0"/>
+    <set-attr-value name="z" value="210.0"/>
+    <set-attr-value name="qw" value="0.707"/>
+    <set-attr-value name="qx" value="0.707"/>
+    <set-attr-value name="qy" value="0.0"/>
+    <set-attr-value name="qz" value="0.0"/>
+    <set-attr-value name="scalez" value="0.7"/>
+    <set-attr-value name="dynamics" value="false"/>
+    <set-attr-value name="collision" value="false"/>
+  </instanciate>
+  <instanciate class="roof.xml">
+    <set-attr-value name="name" value="wall2"/>
+    <set-attr-value name="x" value="-45.0"/>
+    <set-attr-value name="y" value="141.0"/>
+    <set-attr-value name="z" value="-185.0"/>
+    <set-attr-value name="qw" value="0.707"/>
+    <set-attr-value name="qx" value="0.707"/>
+    <set-attr-value name="qy" value="0.0"/>
+    <set-attr-value name="qz" value="0.0"/>
+    <set-attr-value name="scalez" value="0.7"/>
+    <set-attr-value name="dynamics" value="false"/>
+    <set-attr-value name="collision" value="false"/>       
+  </instanciate>
+  <instanciate class="roof.xml">
+    <set-attr-value name="name" value="wall3_1"/>
+    <set-attr-value name="x" value="-620.0"/>
+    <set-attr-value name="y" value="248.5"/>
+    <set-attr-value name="z" value="-25.0"/>
+    <set-attr-value name="qw" value="0.707"/>
+    <set-attr-value name="qx" value="0.0"/>
+    <set-attr-value name="qy" value="0.0"/>
+    <set-attr-value name="qz" value="0.707"/>
+    <set-attr-value name="scalex" value="0.06"/>
+    <set-attr-value name="scalez" value="0.8"/>
+    <set-attr-value name="dynamics" value="false"/>
+    <set-attr-value name="collision" value="false"/>
+  </instanciate>
+  <instanciate class="roof.xml">
+    <set-attr-value name="name" value="wall3_3"/>
+    <set-attr-value name="x" value="-620.0"/>
+    <set-attr-value name="y" value="42.0"/>
+    <set-attr-value name="z" value="-25.0"/>
+    <set-attr-value name="qw" value="0.707"/>
+    <set-attr-value name="qx" value="0.0"/>
+    <set-attr-value name="qy" value="0.0"/>
+    <set-attr-value name="qz" value="0.707"/>
+    <set-attr-value name="scalex" value="0.08"/>
+    <set-attr-value name="scalez" value="0.8"/>
+    <set-attr-value name="dynamics" value="false"/>
+    <set-attr-value name="collision" value="false"/>
+  </instanciate>
+  <instanciate class="roof.xml">
+    <set-attr-value name="name" value="wall3_2"/>
+    <set-attr-value name="x" value="-620.0"/>
+    <set-attr-value name="y" value="147.0"/>
+    <set-attr-value name="z" value="15.0"/>
+    <set-attr-value name="qw" value="0.707"/>
+    <set-attr-value name="qx" value="0.0"/>
+    <set-attr-value name="qy" value="0.0"/>
+    <set-attr-value name="qz" value="0.707"/>
+    <set-attr-value name="scalex" value="0.12"/>
+    <set-attr-value name="scalez" value="0.325"/>
+    <set-attr-value name="dynamics" value="false"/>
+    <set-attr-value name="collision" value="false"/>
+  </instanciate>
+  <instanciate class="roof.xml">
+    <set-attr-value name="name" value="wall3_4"/>
+    <set-attr-value name="x" value="-620.0"/>
+    <set-attr-value name="y" value="148.0"/>
+    <set-attr-value name="z" value="-165.0"/>
+    <set-attr-value name="qw" value="0.707"/>
+    <set-attr-value name="qx" value="0.0"/>
+    <set-attr-value name="qy" value="0.0"/>
+    <set-attr-value name="qz" value="0.707"/>
+    <set-attr-value name="scalex" value="0.12"/>
+    <set-attr-value name="scalez" value="0.096"/>
+    <set-attr-value name="dynamics" value="false"/>
+    <set-attr-value name="collision" value="false"/>
+  </instanciate>
+  <instanciate class="roof.xml">
+    <set-attr-value name="name" value="wall3_a"/>
+    <set-attr-value name="x" value="-488.0"/>
+    <set-attr-value name="y" value="141.0"/>
+    <set-attr-value name="z" value="80.0"/>
+    <set-attr-value name="qw" value="0.707"/>
+    <set-attr-value name="qx" value="0.707"/>
+    <set-attr-value name="qy" value="0.0"/>
+    <set-attr-value name="qz" value="0.0"/>
+    <set-attr-value name="scalex" value="0.225"/>
+    <set-attr-value name="scalez" value="0.7"/>
+    <set-attr-value name="dynamics" value="false"/>
+    <set-attr-value name="collision" value="false"/>
+  </instanciate>
+  <instanciate class="roof.xml">
+    <set-attr-value name="name" value="wall3_b"/>
+    <set-attr-value name="x" value="-335.0"/>
+    <set-attr-value name="y" value="135.0"/>
+    <set-attr-value name="z" value="145.0"/>
+    <set-attr-value name="qw" value="0.707"/>
+    <set-attr-value name="qx" value="0.0"/>
+    <set-attr-value name="qy" value="0.0"/>
+    <set-attr-value name="qz" value="0.707"/>
+    <set-attr-value name="scalex" value="0.25"/>
+    <set-attr-value name="scalez" value="0.325"/>
+    <set-attr-value name="dynamics" value="false"/>
+    <set-attr-value name="collision" value="false"/>
+  </instanciate>
+  <instanciate class="roof.xml">
+    <set-attr-value name="name" value="wall4_1"/>
+    <set-attr-value name="x" value="530.0"/>
+    <set-attr-value name="y" value="248.5"/>
+    <set-attr-value name="z" value="15.0"/>
+    <set-attr-value name="qw" value="0.707"/>
+    <set-attr-value name="qx" value="0.0"/>
+    <set-attr-value name="qy" value="0.0"/>
+    <set-attr-value name="qz" value="0.707"/>
+    <set-attr-value name="scalex" value="0.08"/>
+    <set-attr-value name="dynamics" value="false"/>
+    <set-attr-value name="collision" value="false"/>
+  </instanciate>
+  <instanciate class="roof.xml">
+    <set-attr-value name="name" value="wall4_3"/>
+    <set-attr-value name="x" value="530.0"/>
+    <set-attr-value name="y" value="42.0"/>
+    <set-attr-value name="z" value="15.0"/>
+    <set-attr-value name="qw" value="0.707"/>
+    <set-attr-value name="qx" value="0.0"/>
+    <set-attr-value name="qy" value="0.0"/>
+    <set-attr-value name="qz" value="0.707"/>
+    <set-attr-value name="scalex" value="0.08"/>
+    <set-attr-value name="dynamics" value="false"/>
+    <set-attr-value name="collision" value="false"/>
+  </instanciate>
+ <instanciate class="garden.xml">
+   <set-attr-value name="name" value="gargen"/>
+   <set-attr-value name="x" value="0.0"/>
+   <set-attr-value name="y" value="0.1"/>
+   <set-attr-value name="z" value="0.0"/>
+    <set-attr-value name="scalex" value="7.0"/>  
+    <set-attr-value name="scaley" value="1.0"/>  
+    <set-attr-value name="scalez" value="7.0"/>  
+   <set-attr-value name="dynamics" value="false"/>
+   <set-attr-value name="collision" value="false"/>
+ </instanciate>
+  
+<!-- faniture -->
+  <instanciate class="seChair_A_c01.xml">
+    <set-attr-value name="name" value="chair_a1"/>
+    <set-attr-value name="dynamics" value="false"/>
+    <set-attr-value name="x" value="0.0"/>
+    <set-attr-value name="y" value="51.0"/>
+    <set-attr-value name="z" value="500"/>
+    <set-attr-value name="qw" value="0.0"/>  
+    <set-attr-value name="qx" value="0.0"/>  
+    <set-attr-value name="qy" value="1.0"/>  
+    <set-attr-value name="qz" value="0.0"/>  
+  </instanciate>
+  <instanciate class="seChair_A_c01.xml">
+    <set-attr-value name="name" value="chair_a2"/>
+    <set-attr-value name="dynamics" value="false"/>
+    <set-attr-value name="x" value="0.0"/>
+    <set-attr-value name="y" value="51.0"/>
+    <set-attr-value name="z" value="700"/>
+  </instanciate>
+  <instanciate class="seDiningtable_A.xml">
+    <set-attr-value name="name" value="dtable_a"/>
+    <set-attr-value name="dynamics" value="false"/>
+    <set-attr-value name="x" value="0.0"/>
+    <set-attr-value name="y" value="40.0"/>
+    <set-attr-value name="z" value="600"/>
+  </instanciate>
+  <instanciate class="A1_kitchen.xml">
+    <set-attr-value name="name" value="Kitchen1"/>
+    <set-attr-value name="dynamics" value="false"/>
+    <set-attr-value name="x" value="-484.458"/>
+    <set-attr-value name="y" value="115.696"/>
+    <set-attr-value name="z" value="-97.625"/>
+  </instanciate>
+  
+  <instanciate class="A1_kitchen_table.xml">
+    <set-attr-value name="name" value="Kitchen Table1"/>
+    <set-attr-value name="dynamics" value="false"/>
+    <set-attr-value name="x" value="-204.736"/>
+    <set-attr-value name="y" value="26.30"/>
+    <set-attr-value name="z" value="-112.718"/>
+    <set-attr-value name="scaley" value="0.7"/>
+  </instanciate>
+  
+  <instanciate class="A1_low_table.xml">
+    <set-attr-value name="name" value="Low table1"/>
+    <set-attr-value name="dynamics" value="false"/>
+    <set-attr-value name="x" value="161.447"/>
+    <set-attr-value name="y" value="16.846"/>
+    <set-attr-value name="z" value="43.816"/>
+  </instanciate>
+  <instanciate class="A1_sofas.xml">
+    <set-attr-value name="name" value="Sofas1"/>
+    <set-attr-value name="dynamics" value="false"/>
+    <set-attr-value name="x" value="196.456"/>
+    <set-attr-value name="y" value="39.630"/>
+    <set-attr-value name="z" value="108.055"/>
+  </instanciate>
+  <instanciate class="A1_low_cupboard.xml">
+    <set-attr-value name="name" value="Low cupboard1"/>
+    <set-attr-value name="dynamics" value="false"/>
+    <set-attr-value name="x" value="153.711"/>
+    <set-attr-value name="y" value="11.100"/>
+    <set-attr-value name="z" value="-142.169"/>
+  </instanciate>
+  <instanciate class="A1_television.xml">
+    <set-attr-value name="name" value="Television1"/>
+    <set-attr-value name="dynamics" value="false"/>
+    <set-attr-value name="x" value="153.541"/>
+    <set-attr-value name="y" value="94.294001"/>
+    <set-attr-value name="z" value="-176.250503"/>
+  </instanciate>
+  <instanciate class="A1_fridge.xml">
+    <set-attr-value name="name" value="Fridge1"/>
+    <set-attr-value name="dynamics" value="false"/>
+    <set-attr-value name="x" value="-575.796"/>
+    <set-attr-value name="y" value="87.525"/>
+    <set-attr-value name="z" value="31.290"/>
+  </instanciate>
+  <instanciate class="A1_air_cleaner.xml">
+    <set-attr-value name="name" value="Air cleaner1"/>
+    <set-attr-value name="dynamics" value="false"/>
+    <set-attr-value name="x" value="-484.046"/>
+    <set-attr-value name="y" value="184.955"/>
+    <set-attr-value name="z" value="-160.794"/>
+  </instanciate>
+  <instanciate class="A1_gas_cooker.xml">
+    <set-attr-value name="name" value="Gas cooker1"/>
+    <set-attr-value name="dynamics" value="false"/>
+    <set-attr-value name="x" value="-475.616"/>
+    <set-attr-value name="y" value="88.226"/>
+    <set-attr-value name="z" value="-154.229"/>
+  </instanciate>
+
+  <instanciate class="A1_small_table.xml">
+    <set-attr-value name="name" value="Small table1"/>
+    <set-attr-value name="dynamics" value="false"/>
+    <set-attr-value name="x" value="432.699"/>
+    <set-attr-value name="y" value="26.25"/>
+    <set-attr-value name="z" value="53.328"/>
+    <set-attr-value name="scaley" value="0.965"/>
+  </instanciate>
+
+  <instanciate class="A1_magnetoscope.xml">
+    <set-attr-value name="name" value="Magnetoscope1"/>
+    <set-attr-value name="dynamics" value="false"/>
+    <set-attr-value name="x" value="155.082"/>
+    <set-attr-value name="y" value="23.606"/>
+    <set-attr-value name="z" value="-155.158"/>
+  </instanciate>
+  <instanciate class="A1_cushion.xml">
+    <set-attr-value name="name" value="Cushion1"/>
+    <set-attr-value name="dynamics" value="false"/>
+    <set-attr-value name="x" value="202.322"/>
+    <set-attr-value name="y" value="62.469"/>
+    <set-attr-value name="z" value="165.571"/>
+  </instanciate>
+  <instanciate class="A1_cushion.xml">
+    <set-attr-value name="name" value="Cushion2"/>
+    <set-attr-value name="dynamics" value="false"/>
+    <set-attr-value name="x" value="122.322"/>
+    <set-attr-value name="y" value="62.469"/>
+    <set-attr-value name="z" value="165.571"/>
+  </instanciate>
+  <!--
+  <instanciate class="A1_old_lamp.xml">
+    <set-attr-value name="name" value="Old lamp1"/>
+    <set-attr-value name="dynamics" value="false"/>
+    <set-attr-value name="x" value="332.899"/>
+    <set-attr-value name="y" value="72.926"/>
+    <set-attr-value name="z" value="158.839"/>
+  </instanciate>
+  -->
+ <instanciate class="A1_kitchen_sink.xml">
+    <set-attr-value name="name" value="Kitchen sink1"/>
+    <set-attr-value name="dynamics" value="false"/>
+    <set-attr-value name="x" value="-577.451"/>
+    <set-attr-value name="y" value="89.030"/>
+    <set-attr-value name="z" value="-68.345"/>
+  </instanciate>
+  <instanciate class="A1_dipper.xml">
+    <set-attr-value name="name" value="Dipper1"/>
+    <set-attr-value name="dynamics" value="false"/>
+    <set-attr-value name="x" value="-421.516"/>
+    <set-attr-value name="y" value="121.720"/>
+    <set-attr-value name="z" value="-177.388"/>
+  </instanciate>
+  <instanciate class="A1_chairs.xml">
+    <set-attr-value name="name" value="Chairs1"/>
+    <set-attr-value name="dynamics" value="false"/>
+    <set-attr-value name="x" value="-147.030"/>
+    <set-attr-value name="y" value="37.698"/>
+    <set-attr-value name="z" value="-106.044"/>
+  </instanciate>
+  <instanciate class="A1_frying_pan.xml">
+    <set-attr-value name="name" value="Frying pan1"/>
+    <set-attr-value name="dynamics" value="false"/>
+    <set-attr-value name="x" value="-394.919"/>
+    <set-attr-value name="y" value="117.788"/>
+    <set-attr-value name="z" value="-177.387"/>
+  </instanciate>
+  <instanciate class="A1_curtains.xml">
+    <set-attr-value name="name" value="Curtains1"/>
+    <set-attr-value name="dynamics" value="false"/>
+    <set-attr-value name="x" value="510.94"/>
+    <set-attr-value name="y" value="136.066"/>
+    <set-attr-value name="z" value="10.324"/>
+  </instanciate>
+  <instanciate class="A1_rug.xml">
+    <set-attr-value name="name" value="Rug1"/>
+    <set-attr-value name="dynamics" value="false"/>
+    <set-attr-value name="x" value="168.338"/>
+    <set-attr-value name="y" value="0.387"/>
+    <set-attr-value name="z" value="29.017"/>
+  </instanciate>
+  <instanciate class="A1_lantern.xml">
+    <set-attr-value name="name" value="Lanterns1"/>
+    <set-attr-value name="dynamics" value="false"/>
+    <set-attr-value name="x" value="-203.680"/>
+    <set-attr-value name="y" value="205.729"/>
+    <set-attr-value name="z" value="-116.138"/>
+  </instanciate>
+  <instanciate class="A1_door.xml">
+    <set-attr-value name="name" value="Door1"/>
+    <set-attr-value name="dynamics" value="false"/>
+    <set-attr-value name="x" value="-340.580"/>
+    <set-attr-value name="y" value="99.519"/>
+    <set-attr-value name="z" value="155.722"/>
+  </instanciate>
+  <instanciate class="A1_tableaux.xml">
+    <set-attr-value name="name" value="Tableaux1"/>
+    <set-attr-value name="dynamics" value="false"/>
+    <set-attr-value name="x" value="108.83"/>
+    <set-attr-value name="y" value="146.898"/>
+    <set-attr-value name="z" value="163.419"/>
+  </instanciate>
+  <!--
+  <instanciate class="seSidetable_B.xml">
+    <set-attr-value name="name" value="table_0"/>
+    <set-attr-value name="dynamics" value="false"/>
+    <set-attr-value name="x" value="0.0"/>
+    <set-attr-value name="y" value="24.0"/>
+    <set-attr-value name="z" value="69.0"/>
+    <set-attr-value name="scalex" value="1.3"/>
+    <set-attr-value name="scaley" value="1.5"/>
+    <set-attr-value name="scalez" value="1.3"/>
+  </instanciate>
+  -->
+</world>
